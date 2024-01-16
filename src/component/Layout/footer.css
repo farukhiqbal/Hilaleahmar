@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+}
+
+
+
+footer {
+    background: #343434;
+    color: #fff;
+    font-family: elaineSans-Regular;
+    
+}
+
+
+.copyrightSec{
+    background-color:#111827;
+    border-top: 1px solid   white;
+    color: #fff;
+}
+/* .email-input{
+    width: 17rem;
+} */
+
+.copyright-text{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px ;
+    color: #fff;
+    font-weight: 600;
+   
+}
+
+.copyright-text p {
+    color: #fff;
+}
+
+.submit{
+background-color: white;
+color: #111827;
+}
+
+
+.submit:hover{
+background-color: #dc1f26;
+color: white;
+
+}
+
+
+
+
+
+
