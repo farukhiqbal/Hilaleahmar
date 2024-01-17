@@ -103,7 +103,7 @@ const Chairmanpage = () => {
                   }}>
                   <img
                     className="person-img w-full h-[400px] md:h-75 md:w-75 lg:h-full  rounded-[40px]  object-cover "
-                    src="./images/priciple.jpg"
+                    src="../../assets/images/priciple.jpg"
                     alt="Principal"
                   />
                 </div>
