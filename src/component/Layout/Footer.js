@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="social-lnk flex space-x-4 justify-center mt-4">
       <Link to='/'
         className="text-gray-200 hover:text-white no-underline hover:underline"
-        href="your-facebook-url"
+       
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -22,7 +22,7 @@ const Footer = () => {
       </Link>
       <Link  to=''
         className="text-gray-200 hover:text-white no-underline hover:underline"
-        href="your-instagram-url"
+       
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -30,7 +30,7 @@ const Footer = () => {
       </Link>
       <Link to=''
         className="text-gray-200 hover:text-white no-underline hover:underline"
-        href="your-twitter-url"
+       
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -43,11 +43,11 @@ const Footer = () => {
           <div className="text-center lg:text-left">
             <h2 className="text-xl font-semibold pl-5 lg:pl-8">INFORMATION</h2>
             <ul className="space-y-2">
-              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="https://patel-hospital.org.pk/about-us/">About Us</Link></li>
-              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="https://patel-hospital.org.pk/the-history/">Our History</Link></li>
-              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="https://patel-hospital.org.pk/vision-mission/">Vision & Mission</Link></li>
-              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="https://patel-hospital.org.pk/board-of-trustees/">Board Of Trustees</Link></li>
-              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="https://patel-hospital.org.pk/privacy-policy/">Privacy Policy</Link></li>
+              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="https://patel-hospital.org.pk/about-us/">About Us</Link></li>
+              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="https://patel-hospital.org.pk/the-history/">Our History</Link></li>
+              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="https://patel-hospital.org.pk/vision-mission/">Vision & Mission</Link></li>
+              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="https://patel-hospital.org.pk/board-of-trustees/">Board Of Trustees</Link></li>
+              <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="https://patel-hospital.org.pk/privacy-policy/">Privacy Policy</Link></li>
             </ul>
           </div>
 
@@ -55,10 +55,10 @@ const Footer = () => {
     <div className="footer-links text-center lg:text-left">
       <h2 className="text-xl font-semibold pl-5 lg:pl-8">HELP</h2>
       <ul className="space-y-2">
-        <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="https://patel-hospital.org.pk/appointments/">Appointment</Link></li>
-        <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="https://patel-hospital.org.pk/donate-now/">Donate Now</Link></li>
-        <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="http://labonline.patel-hospital.org.pk/login.php">Lab Results</Link></li>
-        <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="https://patel-hospital.org.pk/faqs/">FAQ’S</Link></li>
+        <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="https://patel-hospital.org.pk/appointments/">Appointment</Link></li>
+        <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="https://patel-hospital.org.pk/donate-now/">Donate Now</Link></li>
+        <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="http://labonline.patel-hospital.org.pk/login.php">Admission S</Link></li>
+        <li><Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="https://patel-hospital.org.pk/faqs/">FAQ’S</Link></li>
       </ul>
     </div>
 
@@ -81,13 +81,13 @@ const Footer = () => {
             <h2 className="text-xl font-semibold lg:ml-6">CONTACT</h2>
             <ul className="space-y-2">
               <li className="uannum">
-                <Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="tel:021-111-174-174">
+                <Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="tel:021-111-174-174">
                   <i className="fa fa-phone mr-5" aria-hidden="true" />
                   <span className="spa ">UAN Number: (041) 920 1475</span>
                 </Link>
               </li>
               <li>
-                <Link  className="text-gray-200 hover:text-white no-underline hover:underline" href="mailto:info@patel-hospital.com">
+                <Link  className="text-gray-200 hover:text-white no-underline hover:underline" to="mailto:info@patel-hospital.com">
                   <i className="fa fa-envelope mr-3" aria-hidden="true" />
                   <span className="spa">hilaleahmarhospital@gmail.com</span>
                 </Link>
