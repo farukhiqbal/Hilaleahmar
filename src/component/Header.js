@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { FiAlignJustify } from "react-icons/fi";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import logo from '../assets/images/logo.png';
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -182,7 +183,7 @@ const Header = () => {
           </div>
     <div className="flex  items-center">
       <Link to="/" onClick={handleLinkClick}>
-        <img className="h-[55px] " src='./images/logo.png' alt="" />
+        <img className="h-[55px] " src={logo} alt="" />
       </Link>
       
          
