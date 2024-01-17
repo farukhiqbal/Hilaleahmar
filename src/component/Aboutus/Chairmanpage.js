@@ -1,29 +1,39 @@
 import React from "react";
+import viceprinciple from '../../assets/images/viceprinciple.png';
+import nursing from '../../assets/images/nursing.jpg';
+import nursing2  from '../../assets/images/nursing2.png';
+import nursing3 from '../../assets/images/nursing3.jpg';
+import english from '../../assets/images/english.jpg';
+import nursing4 from '../../assets/images/nursing4.jpg';
+import students from '../../assets/images/students.jpeg';
+import najma from '../../assets/images/najma.jpg';
+
+
 import { Link } from "react-router-dom";
 
 const Chairmanpage = () => {
   const Academicblock = [
     {
       id: 1,
-      image: "./images/viceprinciple.png",
+      image: viceprinciple,
       title:'Vice Principal',
       name:'Bushra Farzana'
     },
     {
       id: 2,
-      image: "./images/nursing.jpg",
+      image: nursing,
       title:'Nursing Instructor',
       name:'Nighat Rubeena'
     },
     {
       id: 3,
-      image: "./images/nursing2.png",
+      image: nursing2,
       title:'Nursing Instructor',
       name:'Rafiqan Bibi'
     },
     {
       id: 4,
-      image: "./images/nursing3.jpg",
+      image: nursing3,
       title:'Nursing Instructor',
       name:'Asma Parveen'
     },
@@ -31,39 +41,39 @@ const Chairmanpage = () => {
 
     {
       id: 5,
-      image: "./images/english.jpg",
+      image: english,
       title:'English Lecturer',
       name:'Fozia Tahir'
     },
 
     {
       id: 6,
-      image: "./images/nursing4.jpg",
+      image: nursing4,
       title:'Nursing Instructor',
       name:'Miss Hira'
     },
     {
       id: 7,
-      image: "./images/najma.jpg",
+      image: najma,
       title:'Student Affairs',
       name:'Miss. Najma'
     },
     {
       id: 8,
-      image: "./images/nursing.jpg",
+      image: nursing,
       title:'Nursing Instructor',
       name:'Nighat Rubeena'
     },
     {
       id: 9,
-      image: "./images/nursing2.png",
+      image: nursing2,
       title:'Nursing Instructor',
       name:'Shameem Akhtar'
     },
 
     {
       id:10 ,
-      image: "./images/students.jpeg",
+      image: students,
       title:'IT Department',
       name:'Rimsha Razzaq'
     },
