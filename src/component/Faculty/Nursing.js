@@ -1,37 +1,45 @@
 import React from 'react'
+import nursing3 from '../../assets/images/nursing3.jpg';
+import nursing2 from '../../assets/images/nursing2.png';
+import nursing4 from '../../assets/images/nursing4.jpg';
+import nursing from '../../assets/images/nursing.jpg';
+import fozia from '../../assets/images/fozia.jpg';
+
+
+
 
 const Nursing = () => {
   const Academicblock = [
  
     {
       id: 1,
-      image: "./images/nursing.jpg",
+      image: nursing,
       title:'Nursing Instructor',
       name:'Nighat Rubeena'
     },
   
     {
       id: 2,
-      image: "./images/nursing3.jpg",
+      image: nursing3,
       title:'Nursing Instructor',
       name:'Asma Parveen'
     },
     {
       id: 3,
-      image: "./images/nursing4.jpg",
+      image:nursing4,
       title:'Nursing Instructor',
       name:'Miss Hira'
     },
    
     {
       id: 4,
-      image: "./images/nursing2.png",
+      image: nursing2,
       title:'Nursing Instructor',
       name:'Shameem Akhtar'
     },
     {
       id: 5,
-      image: "./images/fozia.jpg",
+      image: fozia,
       title:'English Lecture',
       name:'Fozia Tahir'
     }

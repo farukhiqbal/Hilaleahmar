@@ -4,69 +4,32 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import "./home.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import CounterUp from "react-countup";
+// import Slider from "react-slick";
+// import CounterUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import BackgroundImage from "./BackgroundImage";
-import SchoolInfrasture from "./SchoolInfrasture";
+import g1 from '../../assets/images/g1.jpg';
+import g2 from '../../assets/images/g2.jpg';
+import g3 from '../../assets/images/g3.jpg';
+import g4 from '../../assets/images/g4.jpg';
+import g5 from '../../assets/images/g5.jpg';
+import g6 from '../../assets/images/g6.jpg';
+import carosel2 from '../../assets/images/carosel2.jpg';
+import carosel3 from '../../assets/images/carosel3.jpg';
+import chairman from '../../assets/images/chairman.jpg';
+import nebplogo from '../../assets/images/nebplogo.jpg';
+import pnclogo from '../../assets/images/pnclogo.jpg';
+
+
+
+
+
+
 
 const Home = () => {
   const [counteron, setcounteron] = useState(false);
-
-
-  const Academicblock = [
-    {
-      id: 1,
-      image: "./images/reception.jpg",
-    },
-    {
-      id: 2,
-      image: "./images/cooridor.jpg",
-    },
-    {
-      id: 3,
-      image: "./images/cooridor1.jpg",
-    },
-    {
-      id: 4,
-      image: "./images/oldoffice.jpg",
-    },
-    {
-      id: 5,
-      image: "./images/oldoffice1.jpg",
-    },
-    {
-      id: 6,
-      image: "./images/oldoffice2.jpg",
-    },
-    {
-      id: 7,
-      image: "./images/principaloffice.jpg",
-    },
-    {
-      id: 8,
-      image: "./images/cafe1.jpg",
-    },
-  
-    {
-      id: 9,
-      image: "./images/cafe2.jpg",
-    },
-    {
-      id: 10,
-      image: "./images/cafe2.jpg",
-    },
-    {
-      id: 11,
-      image: "./images/cafe2.jpg",
-    },
-    {
-      id: 12,
-      image: "./images/cafe2.jpg",
-    },
-  ];
 
 
 
@@ -75,35 +38,34 @@ const Home = () => {
   const Gallery = [
     {
       id: 1,
-      imageSrc:'./images/g1.jpg'
+      imageSrc:g1
       },
 
     {
       id: 2,
-      imageSrc:
-  "./images/g2.jpg"
+      imageSrc:g2
     },
     {
       id: 3,
       imageSrc:
-        "./images/g3.jpg",
+        g3
     },
 
     {
       id: 4,
       imageSrc:
-        "./images/g4.jpg",
+          g4
     },
     {
       id: 5,
       imageSrc:
-        "./images/g5.jpg",
+        g5
     },
 
     {
       id: 6,
       imageSrc:
-        "./images/g6.jpg",
+      g6
     },
   
   ];
@@ -170,7 +132,7 @@ const Home = () => {
       <Carousel.Item>
           <img
             className="d-block w-100  lg:h-[600px] sm:h-[700px]"
-            src="./images/carosel2.jpg"
+            src={carosel2}
             alt="Second slide"
        
           />
@@ -178,7 +140,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100  lg:h-[600px] sm:h-[700px]"
-            src="./images/carosel3.jpg"
+            src={carosel3}
             alt="Second slide"
        
           />
@@ -193,7 +155,7 @@ const Home = () => {
   <div className="title text-center ">
     <h2 className="mt-[15px]">Chairman's Message</h2>
     <img
-      src="./images/chairman.jpg"
+      src={chairman}
       width="250px"
       height="250px"
       alt="/"
@@ -233,7 +195,7 @@ const Home = () => {
               <div className=" row mt-5   main-council">  
             <div className="col-md-6 col-sm-12  col-lg-6 council-logo-left">
               <img
-                src="./images/nebplogo.jpg"
+                src={nebplogo}
                 alt="/"
                fluid
               />
@@ -242,7 +204,7 @@ const Home = () => {
 
             <div className="col-md-6 col-sm-12 mb-5 council-logo-right">
               <img
-                src="./images/pnclogo.jpg"
+                src={pnclogo}
                 alt="/"
                 // width="250px"
                 // height="250px"

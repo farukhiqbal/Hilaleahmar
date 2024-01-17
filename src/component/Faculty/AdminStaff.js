@@ -1,17 +1,21 @@
 import React from 'react'
+import viceprinciple from '../../assets/images/viceprinciple.png';
+import najma from '../../assets/images/najma.jpg';
+import students from '../../assets/images/students.jpeg';
+
 
 const AdminStaff = () => {
   const Academicblock = [
     {
       id: 1,
-      image: "./images/viceprinciple.png",
+      image: viceprinciple,
       title:'Vice Principal',
       name:'Bushra Farzana'
     },
    
     {
       id: 2,
-      image: "./images/najma.jpg",
+      image: najma,
       title:'Student Affairs',
       name:'Miss. Najma'
     },
@@ -19,7 +23,7 @@ const AdminStaff = () => {
  
     {
       id:3 ,
-      image: "./images/students.jpeg",
+      image:students,
       title:'IT Department',
       name:'Rimsha Razzaq'
     },

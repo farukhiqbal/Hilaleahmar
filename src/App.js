@@ -12,7 +12,6 @@ import TestDates from './component/admission/TestDates';
 import Rulesandpolicy from './component/admission/Rulesandpolicy';
 import AdmissionGuide from './component/admission/AdmissionGuide';
 import Nursing from './component/Faculty/Nursing';
-import NonNursing from './component/Faculty/NonNursing';
 import Visiting from './component/Faculty/Visiting';
 import AdminStaff from './component/Faculty/AdminStaff';
 import CnaProgram from './component/program/CnaProgram';
@@ -54,7 +53,7 @@ function App() {
 
              
               <Route path='/nursing' element={<Nursing/>}/>
-              <Route path='/nonursing' element={<NonNursing/>}/>
+      
               <Route path='/visiting' element={<Visiting/>}/>
               <Route path='/admin' element={<AdminStaff/>}/>
 

@@ -7,6 +7,12 @@ import english from '../../assets/images/english.jpg';
 import nursing4 from '../../assets/images/nursing4.jpg';
 import students from '../../assets/images/students.jpeg';
 import najma from '../../assets/images/najma.jpg';
+import priciple from '../../assets/images/priciple.jpg';
+import chairman from '../../assets/images/chairman.jpg';
+import ams from '../../assets/images/ams.jpg';
+
+
+import hod from '../../assets/images/hod.jpg';
 
 
 import { Link } from "react-router-dom";
@@ -103,7 +109,7 @@ const Chairmanpage = () => {
                   }}>
                   <img
                     className="person-img w-full h-[400px] md:h-75 md:w-75 lg:h-full  rounded-[40px]  object-cover "
-                    src="../../assets/images/priciple.jpg"
+                    src={priciple}
                     alt="Principal"
                   />
                 </div>
@@ -182,8 +188,8 @@ const Chairmanpage = () => {
                   <img
                     decoding="async"
                     className="person-img img-responsive wp-image-854 w-full h-full object-cover rounded-full"
-                    src="./images/chairman.jpg"
-                    alt="Vice Principal"
+                    src={chairman}
+               
                   />
                 </div>
               </div>
@@ -218,8 +224,8 @@ const Chairmanpage = () => {
                   <img
                     decoding="async"
                     className="person-img img-responsive wp-image-854 w-full h-full object-cover rounded-full"
-                    src="./images/ams.jpg"
-                    alt="Vice Principal"
+                    src={ams}
+                   
                   />
                 </div>
               </div>
@@ -255,8 +261,8 @@ const Chairmanpage = () => {
                   <img
                     decoding="async"
                     className="person-img img-responsive wp-image-854 w-full h-full object-cover rounded-full"
-                    src="./images/hod.jpg"
-                    alt="Vice Principal"
+                    src={hod}
+                    alt="hod"
                   />
                 </div>
               </div>

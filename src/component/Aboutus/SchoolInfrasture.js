@@ -1,56 +1,66 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import reception from '../../assets/images/reception.jpg';
+import cooridor from '../../assets/images/cooridor.jpg';
+import cooridor1 from '../../assets/images/cooridor1.jpg';
+import oldoffice from '../../assets/images/oldoffice.jpg';
+import oldoffice1 from '../../assets/images/oldoffice1.jpg';
+import oldoffice2 from '../../assets/images/oldoffice2.jpg';
+import principaloffice from '../../assets/images/principaloffice.jpg';
+import cafe1 from '../../assets/images/cafe1.jpg';
+import cafe2 from '../../assets/images/cafe2.jpg';
+
 
 const SchoolInfrasture = () => {
   const Academicblock = [
     {
       id: 1,
-      image: "./images/reception.jpg",
+      image: reception,
     },
     {
       id: 2,
-      image: "./images/cooridor.jpg",
+      image: cooridor,
     },
     {
       id: 3,
-      image: "./images/cooridor1.jpg",
+      image: cooridor1,
     },
     {
       id: 4,
-      image: "./images/oldoffice.jpg",
+      image: oldoffice,
     },
     {
       id: 5,
-      image: "./images/oldoffice1.jpg",
+      image: oldoffice1,
     },
     {
       id: 6,
-      image: "./images/oldoffice2.jpg",
+      image:  oldoffice2,
     },
     {
       id: 7,
-      image: "./images/principaloffice.jpg",
+      image:principaloffice,
     },
     {
       id: 8,
-      image: "./images/cafe1.jpg",
+      image: cafe1,
     },
   
     {
       id: 9,
-      image: "./images/cafe2.jpg",
+      image:cafe2,
     },
     {
       id: 10,
-      image: "./images/cafe2.jpg",
+      image: cafe2,
     },
     {
       id: 11,
-      image: "./images/cafe2.jpg",
+      image: cafe2,
     },
     {
       id: 12,
-      image: "./images/cafe2.jpg",
+      image: cafe2,
     },
   ];
 
