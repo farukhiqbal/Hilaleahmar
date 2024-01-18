@@ -251,19 +251,25 @@ const Home = () => {
 
 <div className="image-display flex flex-col sm:flex-col md:flex-row w-full overflow-hidden">
   {/* First Image */}
-  <div className="image-container relative h-80 md:w-1/2 bg-cover bg-center transition-all transform" style={{ backgroundImage: 'linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)), url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)' }}>
-    <div className="content-display absolute inset-0 p-8 text-white">
+  <div className=" relative h-82 md:w-1/2 bg-white   border-2 border-black" >
+    <div className="content-display absolute inset-0 p-8 text-black">
 
     <h2 className="text-4xl font-bold">
-          <span>CNA 2 Year Program</span>
+          <span>Certified Nursing Assistant 2 Year Program (CNA)</span>
         </h2>
-        
+        <h3 className="text-black">
+        Certified Nursing Assistant (CNA) is a (02) Two-years professional education program leading to practice as a Registered Nurse. The diploma program offers integrated nursing knowledge,
+         skills and professional attitude. Upon completion of this program the graduate is prepared to be a safe clinical nurse, who will be able to provide comprehensive care at primary, secondary and tertiary levels with in hospitals and community settings.
+        </h3>
         <p>
           <Link to='/cnaprogram' className="wow fadeInRight">Read More</Link>
         </p>
 
     </div>
   </div>
+
+
+
 
   {/* Second Image */}
   <div className="image-container relative h-80 md:w-1/2 bg-cover bg-center transition-all transform" style={{ backgroundImage: 'linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)), url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)' }}>
