@@ -1,5 +1,5 @@
 import React from "react";
-
+import mission from '../../assets/images/vision-mission.jpg'
 
 const MissionandVision = () => {
   return (
@@ -7,7 +7,7 @@ const MissionandVision = () => {
       <div className="mb-5 ">
         <div className=" relative">
           <img
-            src="./images/vision-mission.jpg"
+            src={mission}
             alt=""
             className="w-full h-auto"
           />
