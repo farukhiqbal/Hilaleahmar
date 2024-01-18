@@ -257,9 +257,7 @@ const Home = () => {
     <h2 className="text-4xl font-bold">
           <span>CNA 2 Year Program</span>
         </h2>
-        <h3>
-          An Otolaryngologist is a professional term called for an ear, nose, and throat doctor which we often refer to as ENT in short.
-        </h3>
+        
         <p>
           <Link to='/cnaprogram' className="wow fadeInRight">Read More</Link>
         </p>
@@ -273,9 +271,7 @@ const Home = () => {
     <h2 className="text-4xl font-bold">
           <span>LHV 2 Year Program</span>
         </h2>
-        <h3>
-           we provide women with compassionate, research-based care at every stage of life from adolescence to menopause and beyond.
-        </h3>
+      
         <p>
           <Link to='/lhvprogram' className="wow fadeInRight">Read More</Link>
         </p>
@@ -294,9 +290,7 @@ const Home = () => {
     <h2 className="text-4xl font-bold">
           <span>CNA 2 Year Program</span>
         </h2>
-        <h3>
-          An Otolaryngologist is a professional term called for an ear, nose, and throat doctor which we often refer to as ENT in short.
-        </h3>
+      
         <p>
           <Link to='/cnaprogram' className="wow fadeInRight">Read More</Link>
         </p>
@@ -310,9 +304,7 @@ const Home = () => {
     <h2 className="text-4xl font-bold">
           <span>CMW 2 Year Program</span>
         </h2>
-        <h3>
-           we provide women with compassionate, research-based care at every stage of life from adolescence to menopause and beyond.
-        </h3>
+        
         <p>
           <Link to='/cmwprogram' className="wow fadeInRight">Read More</Link>
         </p>
