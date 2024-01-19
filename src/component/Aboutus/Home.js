@@ -653,7 +653,7 @@ Employment in the government sector at DHQ or THQ healthcare settings under mate
 
 
       {/* ===========================================slider =================================== */}
-      <div className="">
+      {/* <div className="">
   <div className="">
     <Slider {...settings}>
       {Gallery.map((item) => (
@@ -667,7 +667,7 @@ Employment in the government sector at DHQ or THQ healthcare settings under mate
       ))}
     </Slider>
   </div>
-</div>
+</div> */}
 
 
     </>
