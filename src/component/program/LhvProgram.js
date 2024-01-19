@@ -1,8 +1,54 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import health from '../../assets/images/health.jpg'
 
 const LhvProgram = () => {
   return (
     <div>
+
+
+<div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+        <h2 class="text-center text-[1.2rem]  md:text-4xl lg:text-4xl">
+          <strong>
+          Lady Health Visitors (LHV) (02 years Diploma Program)
+          </strong>
+        </h2>
+      </div>
+
+
+
+
+
+
+<div className='w-full bg-[#F2F2F7] h-full py-3 mt-5'>
+  <div className='flex flex-col md:flex-row lg:flex-row md:justify-evenly mx-auto justify-center py-5'>
+    <div className='w-full md:w-1/4 lg:w-1/4 p-4'>
+      <Link to='#' className='no-underline text-center md:pt-5'>
+        <img className="w-full h-[40vh]" src={health} alt="" />
+      </Link>
+    </div>
+
+    <div className='w-full md:w-3/4 lg:w-[40rem] p-2'>
+      <h3 className="font-bold sm:text-center md:text-left lg:left">
+        <Link to="" target="_blank" className='text-black no-underline text-4xl line-clamp-[5rem]'>Lady Health Visitors (LHV) </Link>
+      </h3>
+      <p className="mt-2 pt-2 text-xl leading-[3rem]">
+      A LHV is eligible to provide health care facilities at home and in other health care settings; community, hospitals, clinics, or health units.
+Employment in the government sector at DHQ or THQ healthcare settings under maternal and child healthcare facilities.   </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -11,6 +57,16 @@ const LhvProgram = () => {
     <strong>Eligibility Criteria (LHV 2 Years Program)</strong>
   </h2>
 </div>
+
+
+
+
+
+
+
+
+
+
 
 
 

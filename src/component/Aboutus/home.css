@@ -168,66 +168,17 @@
 
 /* ==================================images================= */
 
-.image-display {
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-}
-.display-width {
-  width: 100%;
-
-}
-
-    .display-left {
-  background: linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)),
-    url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869) top
-      left/cover no-repeat;
-  width: 50%;
-  
-  height: 20rem;
-  position: relative;
-}
-
-.display-left1 {
-  background: linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)),
-    url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869) top
-      left/cover no-repeat;
-  width: 50%;
-  /* border: 1px solid black; */
-  height: 20rem;
-  position: relative;
-}
-
-.display-left2 {
-  background: linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)),
-    url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)
-      top left/cover no-repeat;
-  width: 50%;
-  
-  height: 20rem;
-  position: relative;
-}
-
-.display-left3 {
-  background: linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)),
-    url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)
-      top left/cover no-repeat;
-  width: 50%;
-  
-  height: 20rem;
-  position: relative;
-}
 
 .content-display {
   padding: 30px;
-
   width: 100%;
   height: 100%;
   top: 0;
  
 }
-.content-display:hover {
-  background-color: #dc1f2563;
+.content-display:hover  {
+  background-color:  rgba(208, 208, 219, 0.947);
+  color: #fff;
 }
 .display-h2 {
   font-size: 2rem;
@@ -243,6 +194,10 @@
   line-height: 20px;
   margin-top: 1rem;
   margin-bottom: 25px;
+}
+.content-display h3:hover{
+  color: white;
+  
 }
 
 .content-display p a {
@@ -261,53 +216,12 @@
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
-.content-display p a:hover {
+.content-display p a:hover{
+
+  color: #fff;
   background: #000;
-  color: #d9dadb;
-}
 
-.content-display p {
-  color: black;
-}
 
-.display-right {
-  background: linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)),
-    url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)
-      top left/cover no-repeat;
-  width: 50%;
-  height: 20rem;
-  border: 1px solid black;
-}
-
-.display-right1 {
-  background: linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)),
-    url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)
-      top left/cover no-repeat;
-  width: 50%;
-  height: 20rem;
-}
-
-.display-right3 {
-  background: linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)),
-    url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869) top
-      left/cover no-repeat;
-  width: 50%;
-  height: 20rem;
-}
-
-.display-right4 {
-  background: linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)),
-    url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869) top
-      left/cover no-repeat;
-  width: 50%;
-  height: 20rem;
-}
-
-@media screen and (max-width: 1200px) and (min-width: 768px) {
-  .display-width {
-    width: 100%;
-    display: block;
-  }
 }
 
 

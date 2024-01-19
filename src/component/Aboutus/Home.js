@@ -4,7 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import "./home.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick";
+import Slider from "react-slick";
 // import CounterUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
@@ -21,9 +21,9 @@ import carosel3 from '../../assets/images/carosel3.jpg';
 import chairman from '../../assets/images/chairman.jpg';
 import nebplogo from '../../assets/images/nebplogo.jpg';
 import pnclogo from '../../assets/images/pnclogo.jpg';
-
-
-
+import Cna from '../../assets/images/cna.jpg'
+import midwife from '../../assets/images/midwife.jpg'
+import health from '../../assets/images/health.jpg'
 
 
 
@@ -232,8 +232,9 @@ const Home = () => {
 
 
       {/* ================ home heading1============================= */}
-     
-     
+
+
+
       <div className="col-span-12  mb-5 md:mb-0 lg:mb-10 xl:mb-15  ">
   <div className="Heading text-center text-white">
     <h1 className="text-[2rem] sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl uppercase font-elaineSans-ExtraLight transition-all duration-300 ease-in-out">
@@ -241,79 +242,85 @@ const Home = () => {
     </h1>
   </div>
 </div>
+     {/* =====================================end =========================== */}
      
      
+
+
+<div className='w-full bg-[#f2f2f7df] h-full py-3 mt-5'>
+
+<div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+        <h2 class="text-left text-[1.2rem]  md:text-4xl lg:text-4xl">
+          <strong>
+          Certified Nursing Assistant (CNA)  2 Year Program
+          </strong>
+        </h2>
+      </div>
+
+
+
+  <div className='flex flex-col md:flex-row lg:flex-row md:justify-evenly mx-auto justify-center py-5'>
     
+    <div className='w-full md:w-1/4 lg:w-1/4 p-'>
+    
+      <Link to='#' className='no-underline text-center md:pt-5'>
+        <img className="w-full h-[50vh]" src={Cna} alt="" />
+      </Link>
+    </div>
 
-
-
-
-
-<div className="image-display flex flex-col sm:flex-col md:flex-row w-full overflow-hidden">
-  {/* First Image */}
-  <div className=" relative h-82 md:w-1/2 bg-white   border-2 border-black" >
-    <div className="content-display absolute inset-0 p-8 text-black">
-
-    <h2 className="text-4xl font-bold">
-          <span>Certified Nursing Assistant 2 Year Program (CNA)</span>
-        </h2>
-        <h3 className="text-black">
-        Certified Nursing Assistant (CNA) is a (02) Two-years professional education program leading to practice as a Registered Nurse. The diploma program offers integrated nursing knowledge,
+    <div className='w-full md:w-3/4 lg:w-[40rem] p-2'>
+      <h3 className="font-bold sm:text-center md:text-left lg:left">
+        <Link to="" target="_blank" className='text-black no-underline text-2xl line-clamp-[5rem]'> Scope of (CNA) </Link>
+      </h3>
+      <p className="mt-2 pt-2 text-xl leading-[3rem]">
+      Certified Nursing Assistant (CNA) is a (02) Two-years professional education program leading to practice as a Registered Nurse. The diploma program offers integrated nursing knowledge,
          skills and professional attitude. Upon completion of this program the graduate is prepared to be a safe clinical nurse, who will be able to provide comprehensive care at primary, secondary and tertiary levels with in hospitals and community settings.
-        </h3>
-        <p>
-          <Link to='/cnaprogram' className="wow fadeInRight">Read More</Link>
-        </p>
-
-    </div>
-  </div>
-
-
-
-
-  {/* Second Image */}
-  <div className="image-container relative h-80 md:w-1/2 bg-cover bg-center transition-all transform" style={{ backgroundImage: 'linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)), url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)' }}>
-    <div className="content-display absolute inset-0 p-8 text-white">
-    <h2 className="text-4xl font-bold">
-          <span>LHV 2 Year Program</span>
-        </h2>
-      
-        <p>
-          <Link to='/lhvprogram' className="wow fadeInRight">Read More</Link>
-        </p>
+       </p>
     </div>
   </div>
 </div>
 
-                  {/* ==============================row 2====================== */}
+
+{/* =========================================CNA part EnD======================================= */}
 
 
-<div className="image-display flex flex-col sm:flex-col md:flex-row w-full overflow-hidden">
-  {/* First Image */}
-  <div className="image-container relative h-80 md:w-1/2 bg-cover bg-center transition-all transform" style={{ backgroundImage: 'linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)), url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)' }}>
-    <div className="content-display absolute inset-0 p-8 text-white">
 
-    <h2 className="text-4xl font-bold">
-          <span>CNA 2 Year Program</span>
+
+
+
+
+
+
+
+<div className='w-full  h-full py-1'>
+
+<div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+        <h2 class="text-left text-[1.2rem]  md:text-4xl lg:text-4xl">
+          <strong>
+          Community Midwife  (CMW)  2 Year Program
+          </strong>
         </h2>
-      
-        <p>
-          <Link to='/cnaprogram' className="wow fadeInRight">Read More</Link>
-        </p>
+      </div>
 
+
+
+  <div className='flex flex-col md:flex-row lg:flex-row md:justify-evenly mx-auto justify-center py-5'>
+    
+    <div className='w-full md:w-1/4 lg:w-1/4 p-'>
+    
+      <Link to='#' className='no-underline w-full text-center md:pt-5'>
+        <img className="w-full h-[50vh]" src={midwife} alt="" />
+      </Link>
     </div>
-  </div>
 
-  {/* Second Image */}
-  <div className="image-container relative h-80 md:w-1/2 bg-cover bg-center transition-all transform" style={{ backgroundImage: 'linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)), url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)' }}>
-    <div className="content-display absolute inset-0 p-8 text-white">
-    <h2 className="text-4xl font-bold">
-          <span>CMW 2 Year Program</span>
-        </h2>
-        
-        <p>
-          <Link to='/cmwprogram' className="wow fadeInRight">Read More</Link>
-        </p>
+    <div className='w-full md:w-3/4 lg:w-[40rem] p-2'>
+      <h3 className="font-bold sm:text-center md:text-left lg:left">
+        <Link to="" target="_blank" className='text-black no-underline text-2xl line-clamp-[5rem]'> Scope of (CMW) </Link>
+      </h3>
+      <p className="mt-2 pt-2 text-xl leading-[3rem]">
+      This is a two years’ diploma program, leading to practice as a Registered Midwife (RM). The CMW diploma program has been designed for training rural females as midwives who can provide maternal and newborn care to women and children of their communities. Rural females meeting the CMW eligibility criteria enter into this program through a formal selection process.
+     
+      </p>
     </div>
   </div>
 </div>
@@ -321,11 +328,50 @@ const Home = () => {
 
 
 
+{/* ======================================cmw part end ============================================== */}
 
 
 
 
 
+
+
+<div className='w-full bg-[#f2f2f7df]  h-full py-1'>
+
+<div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
+        <h2 class="text-left text-[1.2rem]  md:text-4xl lg:text-4xl">
+          <strong>
+          Lady Health Visitors (LHV)  2 Year Program
+          </strong>
+        </h2>
+      </div>
+
+
+
+  <div className='flex flex-col md:flex-row lg:flex-row md:justify-evenly mx-auto justify-center py-5'>
+    
+    <div className='w-full md:w-1/4 lg:w-1/4 p-'>
+    
+      <Link to='#' className='no-underline text-center md:pt-5'>
+        <img className="w-[100vw] h-[50vh]" src={health} alt="" />
+      </Link>
+    </div>
+
+    <div className='w-full md:w-3/4 lg:w-[40rem] p-2'>
+      <h3 className="font-bold sm:text-center md:text-left lg:left">
+        <Link to="" target="_blank" className='text-black no-underline text-2xl line-clamp-[5rem]'> Scope of (LHV) </Link>
+      </h3>
+      <p className="mt-2 pt-2 text-xl leading-[3rem]">
+      A LHV is eligible to provide health care facilities at home and in other health care settings; community, hospitals, clinics, or health units.
+Employment in the government sector at DHQ or THQ healthcare settings under maternal and child healthcare facilities.   </p>
+   
+      
+    </div>
+  </div>
+</div>
+
+
+{/* ================================================lhv part end ================================= */}
 
 
 
@@ -338,7 +384,7 @@ const Home = () => {
 <div className="col-span-12 mb-5 md:mb-2 lg:mb-32 xl:mb-8 mt-[5rem]">
   <div className="Heading text-center text-white">
     <h1 className="text-[2rem] sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl uppercase font-elaineSans-ExtraLight transition-all duration-300 ease-in-out">
-      <span className="text-black">SUPPORT OUR mission</span>
+      <span className="text-black"> VISion & mission</span>
     </h1>
   </div>
 </div>
@@ -350,12 +396,12 @@ const Home = () => {
  {/* ==========================dispaly image 2 ===================================== */}
 
 
-<div className="image-display flex flex-col sm:flex-col md:flex-row w-full overflow-hidden">
+<div className="image-display flex flex-col sm:flex-col md:flex-row w-full overflow-hidden bg-[#f2f2f7df]">
   {/* First Image */}
-  <div className="image-container relative h-80 md:w-1/3 bg-cover bg-center transition-all transform" style={{ backgroundImage: 'linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)), url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)' }}>
-    <div className="content-display absolute inset-0 p-8 text-white">
+  <div className="image-container relative h-80 md:w-1/3 " >
+    <div className="content-display absolute  p-8 ">
     <div className="heading heading-with-icon icon-left">
-                        <div className="icon text-center   pt-1">
+                        <div className="icon text-center text-black  pt-1">
                           <span>
                             <i
                               style={{
@@ -364,7 +410,7 @@ const Home = () => {
                                 height: "auto",
                                 width: "50px",
                                 lineHeight: "normal",
-                                color: "#ffffff",
+                                color: "black",
                                 fontSize: "50px",
                               }}
                               aria-hidden="true"
@@ -372,20 +418,20 @@ const Home = () => {
                             ></i>
                           </span>
                         </div>
-                        <h2 className="text-white text-3xl font-bold mt-4 mb-2 text-center">
+                        <h2 className="text-black text-3xl font-bold mt-4 mb-2 text-center">
                           Mission
                         </h2>
                       </div>
 
-           <p className="text-white">The Hilal-E-Ahmar School of Nursing will be a nationally recognized center of excellence in inquiry, knowledge, and expertise. The school of nursing educators, clinicians, and researchers produce the next generation of nursing leaders empowered and focused on innovative responses to address the challenges of a rapidly changing and culturally diverse health care environment in Pakistan.</p>
+           <p className="text-black">The Hilal-E-Ahmar School of Nursing will be a nationally recognized center of excellence in inquiry, knowledge, and expertise. The school of nursing educators, clinicians, and researchers produce the next generation of nursing leaders empowered and focused on innovative responses to address the challenges of a rapidly changing and culturally diverse health care environment in Pakistan.</p>
 
        
     </div>
   </div>
 
   {/* Second Image */}
-  <div className="image-container relative h-80 md:w-1/3 bg-cover bg-center transition-all transform" style={{ backgroundImage: 'linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)), url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)' }}>
-    <div className="content-display absolute inset-0 p-8 text-white">
+  <div className="image-container relative h-80 md:w-1/3 bg-cover bg-center transition-all transform" >
+    <div className="content-display absolute inset-0 p-8 text-black">
     <div className="heading heading-with-icon icon-left">
                         <div className="icon text-center  pt-1">
                           <span>
@@ -396,7 +442,7 @@ const Home = () => {
                                 height: "auto",
                                 width: "50px",
                                 lineHeight: "normal",
-                                color: "#ffffff",
+                                color: "black",
                                 fontSize: "50px",
                               }}
                               aria-hidden="true"
@@ -404,11 +450,11 @@ const Home = () => {
                             ></i>
                           </span>
                         </div>
-                        <h2 className="text-white text-3xl font-bold mt-4 mb-2 text-center">
+                        <h2 className="text-black text-3xl font-bold mt-4 mb-2 text-center">
                           Vision
                         </h2>
                       </div>
-        <p className="text-justify  text-white">
+        <p className="text-justify  text-black">
                           The School of Nursing provides an innovative, caring,
                           and collaborative learning environment. The graduates
                           demonstrate integrity and are prepared for
@@ -421,8 +467,8 @@ const Home = () => {
   </div>
 
   {/* Third Image */}
-  <div className="image-container relative h-80 md:w-1/3 bg-cover bg-center transition-all transform" style={{ backgroundImage: 'linear-gradient(rgba(33, 30, 30, 0.84), rgba(29, 25, 25, 0.7)), url(https://scontent.flhe5-1.fna.fbcdn.net/v/t39.30808-6/299294266_365724325764568_4755002102037008504_n.jpg?stp=dst-jpg_p640x640&_nc_cat=106&ccb=1-7&_nc_sid=783fdb&_nc_ohc=vcf71JRNl9YAX8Wxj4X&_nc_ht=scontent.flhe5-1.fna&oh=00_AfA9kksnlvM3msoaDrziFsAQ4lSauLy2GmiVZh5-4oFaNA&oe=65A56869)' }}>
-    <div className="content-display absolute inset-0 p-8 text-white">
+  <div className="image-container relative h-80 md:w-1/3 bg-cover bg-center transition-all transform" >
+    <div className="content-display absolute inset-0 p-8 text-black">
     <div className="heading heading-with-icon icon-left">
                         <div className="icon text-center pt-1">
                           <span>
@@ -433,7 +479,7 @@ const Home = () => {
                                 height: "auto",
                                 width: "50px",
                                 lineHeight: "normal",
-                                color: "#ffffff",
+                                color: "black",
                                 fontSize: "50px",
                               }}
                               aria-hidden="true"
@@ -441,12 +487,12 @@ const Home = () => {
                             ></i>
                           </span>
                         </div>
-                        <h2 className="text-white text-3xl font-bold mt-4 mb-2 text-center">
+                        <h2 className="text-black text-3xl font-bold mt-4 mb-2 text-center">
                           Goal
                         </h2>
                       </div>
                       <div className="text-gray-300">
-                        <p className="text-justify  text-white">
+                        <p className="text-justify  text-black">
                           Educate the nurse to provide exemplary nursing care
                           appropriate to the health needs of urban and rural
                           populations in hospitals and communities. Provide
@@ -607,11 +653,11 @@ const Home = () => {
 
 
       {/* ===========================================slider =================================== */}
-      {/* <div className="">
+      <div className="">
   <div className="">
     <Slider {...settings}>
-      {Department.map((item) => (
-        <div key={item.id} className="">
+      {Gallery.map((item) => (
+        <div key={item.id} className="m-5  p-6">
           <img
             src={item.imageSrc}
             className=""
@@ -621,7 +667,7 @@ const Home = () => {
       ))}
     </Slider>
   </div>
-</div> */}
+</div>
 
 
     </>
