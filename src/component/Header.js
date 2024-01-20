@@ -221,14 +221,14 @@ const Header = () => {
                     </Link>
 
                     {li.submenu && (
-                      <div className="absolute top-8 left-10 w-[250px]   hidden group-hover:block shadow-lg z-[999] bg-white/90">
+                      <div className="absolute top-7 left-1 w-[250px]   hidden group-hover:block shadow-lg z-[999] bg-white/90">
                         <div className="pt-2 py-1">
                           <div className="w-3 h-4 absolute mt-5 rotate-45"></div>
 
                           <div className="py-2 px-3 flex flex-col">
                             {li.dropdown.map((mysublinks, subIndex) => (
                               <div
-                                className="text-black/80 hover:text-red-500"
+                                className="text-black/80    hover:text-red-500"
                                 key={subIndex}
                               >
                                 <Link to={mysublinks.link} className="text-black no-underline text-[17px]">
@@ -286,21 +286,21 @@ const Header = () => {
                     </li>
                   </Link>
                   {li.submenu && (
-                    <BsChevronUp
+                    <BsChevronDown
                       className={`${submenuStates[index] && "rotate-180"
                         } absolute  mt-[-39px] right-8 `}
                       onClick={() => handleSubmenuToggle(index)}
                     />
                   )}
 
-                  <div className=" ml-2 mt-2  flex flex-col justify-center my-2 items-center max-h-[40vh] overflow-y-auto">
+                  <div className=" ml- mt-2  flex flex-col justify-center border-b-2 border-black items-center max-h-[40vh] overflow-y-auto">
                     {li.submenu && submenuStates[index] && nav && (
-                      <ul className="pt-20">
+                      <ul className="pt-0">
                         {li.dropdown.map((submenuItem, subIndex) => (
                           <Link to={submenuItem.link} className="text-black no-underline">
                             <li
                               key={subIndex}
-                              className=" text-black/70 text-md ease-out transition-all duration-200 items-center gap-x-4 cursor-pointer p-5   rounded-md py-2   hover:rounded hover:bg-black/5 hover:text-red-700"
+                              className=" text-black/70 text-md ease-out   transition-all duration-200  gap-x-4 cursor-pointer    rounded-md py-2   hover:rounded hover:bg-black/5 hover:text-red-700"
                               onClick={() => {
                                 setNav(!nav);
                               }}

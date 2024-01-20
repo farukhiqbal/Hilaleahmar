@@ -150,39 +150,33 @@ const Home = () => {
 
       <Container>
         <div className="row  mt-6  mb-5 ">
-          <div className="col-md-6  col-sm-12 col-lg-6 ">
-          <div className="sm:flex sm:flex-col  sm:justify-center md:items-start">
-  <div className="title text-center ">
-    <h2 className="mt-[15px]">Chairman's Message</h2>
-    <img
-      src={chairman}
-      width="250px"
-      height="250px"
-      alt="/"
-      className="mx-auto  text-center"
-    />
+        <div className="col-md-6 col-sm-12 col-lg-6">
+  <div className="sm:flex sm:flex-col sm:justify-center md:items-start      text-center px-2">
+    <div className="title">
+      <h2 className="mt-[15px]">Chairman's Message</h2>
+      <img
+        src={chairman}
+        width="250px"
+        height="250px"
+        alt="/"
+        className="mx-auto"
+      />
       <p className="name-heading mt-2">Dr. HAFIZ MUKHTAR AHMAD RANDHAWA</p>
-
+    </div>
   </div>
-
-
-
-
+    <div className=" ">
+  <span className="member  ">
+    <b className="">MEMBERS OF THE RED CRESCENT SOCIETY “EXECUTIVE BODY”</b>
+  </span>
+  <p>
+    "As the chairman of this institution, I anticipate the full participation
+    and cooperation of the students and parents to make it possible for us to
+    transform those dreams to reality. And if there is any assistance that you
+    might need, may it be personal or professional, I shall always be willing
+    to hear from you."
+  </p>
+  </div>
 </div>
-
-
-            <span className="member">
-              <b>MEMBERS OF THE RED CRESENT SOCIETY “EXECUTIVE BODY”</b>
-            </span>
-            <p>
-              "As the chairman of this institution, I anticipate the full
-              participation and cooperation of the students and parents to make
-              it possible for us to transform those dreams to reality. And if
-              there is any assistance that you might need, may it be personal or
-              professional, I shall always be willing to hear from you."
-            </p>
-          </div>
-
 
 
 
@@ -247,10 +241,10 @@ const Home = () => {
      
 
 
-<div className='w-full bg-[#f2f2f7df] h-full py-3 mt-5'>
+<div className='w-full bg-[#f2f2f7df] h-full p-5 mt-5'>
 
 <div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
-        <h2 class="text-left text-[1.2rem]  md:text-4xl lg:text-4xl">
+        <h2 class="text-left text-[1.6rem]  md:text-4xl lg:text-4xl">
           <strong>
           Certified Nursing Assistant (CNA)  2 Year Program
           </strong>
@@ -259,12 +253,12 @@ const Home = () => {
 
 
 
-  <div className='flex flex-col md:flex-row lg:flex-row md:justify-evenly mx-auto justify-center py-5'>
+  <div className='  flex-col   md:flex lg:flex-row md:justify-evenly md:mx-auto lg:mx-auto justify-center py-5'>
     
-    <div className='w-full md:w-1/4 lg:w-1/4 p-'>
+    <div className='w-full md:w-1/4 lg:w-1/4 p-1'>
     
-      <Link to='#' className='no-underline text-center md:pt-5'>
-        <img className="w-full h-[50vh]" src={Cna} alt="" />
+      <Link to='#' className='no-underline text-center  md:pt-5'>
+        <img className="w-full  h-[40vh]  md:full lg:w-full  md:h-[50vh]   lg:h-[50vh]" src={Cna} alt="" />
       </Link>
     </div>
 
@@ -292,10 +286,10 @@ const Home = () => {
 
 
 
-<div className='w-full  h-full py-1'>
+<div className='w-full  h-full p-5'>
 
 <div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
-        <h2 class="text-left text-[1.2rem]  md:text-4xl lg:text-4xl">
+        <h2 class="text-left text-[1.6rem]  md:text-4xl lg:text-4xl">
           <strong>
           Community Midwife  (CMW)  2 Year Program
           </strong>
@@ -304,12 +298,11 @@ const Home = () => {
 
 
 
-  <div className='flex flex-col md:flex-row lg:flex-row md:justify-evenly mx-auto justify-center py-5'>
+      <div className='flex flex-col md:flex-row lg:flex-row md:justify-evenly md:mx-auto justify-center py-5'>
     
-    <div className='w-full md:w-1/4 lg:w-1/4 p-'>
-    
+    <div className='w-full sm:w-full sm:p-5 md:w-1/4 lg:w-1/4 justify-center lg:p-1 md:p-1'>
       <Link to='#' className='no-underline w-full text-center md:pt-5'>
-        <img className="w-full h-[50vh]" src={midwife} alt="" />
+        <img className="w-full  h-[40vh]  md:full lg:w-full  md:h-[50vh]   lg:h-[50vh]" src={midwife} alt="" />
       </Link>
     </div>
 
@@ -336,10 +329,10 @@ const Home = () => {
 
 
 
-<div className='w-full bg-[#f2f2f7df]  h-full py-1'>
+<div className='w-full bg-[#f2f2f7df]  h-full  p-5 md:py-1'>
 
 <div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto mt-5">
-        <h2 class="text-left text-[1.2rem]  md:text-4xl lg:text-4xl">
+        <h2 class="text-left text-[1.6rem]  md:text-4xl lg:text-4xl">
           <strong>
           Lady Health Visitors (LHV)  2 Year Program
           </strong>
@@ -353,7 +346,7 @@ const Home = () => {
     <div className='w-full md:w-1/4 lg:w-1/4 p-'>
     
       <Link to='#' className='no-underline text-center md:pt-5'>
-        <img className="w-[100vw] h-[50vh]" src={health} alt="" />
+        <img className="w-full  h-[40vh]  md:full lg:w-full  md:h-[50vh]   lg:h-[50vh]" src={health} alt="" />
       </Link>
     </div>
 
@@ -470,7 +463,7 @@ Employment in the government sector at DHQ or THQ healthcare settings under mate
   <div className="image-container relative h-80 md:w-1/3 bg-cover bg-center transition-all transform" >
     <div className="content-display absolute inset-0 p-8 text-black">
     <div className="heading heading-with-icon icon-left">
-                        <div className="icon text-center pt-1">
+                        <div className="icon text-center   pt-1">
                           <span>
                             <i
                               style={{
