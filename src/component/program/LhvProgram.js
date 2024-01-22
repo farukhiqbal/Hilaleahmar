@@ -88,7 +88,7 @@ Employment in the government sector at DHQ or THQ healthcare settings under mate
 
 <div class="text-sm font-bold px-2 mx-auto sm:w-full sm:mx-0 md:w-3/4 lg:w-3/4 md:mx-auto my-5">
   <h2 class="text-left text-[1.2rem]  md:text-xl lg:text-xl">
-    <strong>Documents Required:-</strong>
+    <strong>Documents Required:-(All docs should be attested by a grade 17 officer)</strong>
   </h2>
 </div>
 
