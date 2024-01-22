@@ -553,7 +553,7 @@ Employment in the government sector at DHQ or THQ healthcare settings under mate
               alt=""
               title="reception"
               aria-label="reception"
-              className="img-responsive wp-image-882 fusion-gallery-image-size-fixed h-full w-full"
+              className="  w-full h-full   md:h-full md:w-full  lg:h-full lg:w-full"
             />
           </Link>
         </div>
