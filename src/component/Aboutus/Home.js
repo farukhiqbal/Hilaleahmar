@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useRef }  from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "./home.css";
@@ -24,7 +24,8 @@ import pnclogo from '../../assets/images/pnclogo.jpg';
 import Cna from '../../assets/images/cna.jpg'
 import midwife from '../../assets/images/midwife.jpg'
 import health from '../../assets/images/health.jpg'
-
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 
 
@@ -32,6 +33,38 @@ const Home = () => {
   const [counteron, setcounteron] = useState(false);
 
 
+  // const data = [
+  //   {
+  //     img: "/src/assets/img/doc1.jpg",
+  //     name: "Dr. Serena Mitchell",
+  //     specialties: "Orthopedic Surgeon",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc2.jpg",
+  //     name: "Dr. Julian Bennett",
+  //     specialties: "Cardiologist",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc3.jpg",
+  //     name: "Dr. Camila Rodriguez",
+  //     specialties: "Pediatrician",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc4.jpg",
+  //     name: "Dr. Victor Nguyen",
+  //     specialties: "Neurologist",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc5.jpg",
+  //     name: "Dr. Ethan Carter",
+  //     specialties: "Dermatologist",
+  //   },
+  //   {
+  //     img: "/src/assets/img/doc6.jpg",
+  //     name: "Dr. Olivia Martinez",
+  //     specialties: "Ophthalmologist",
+  //   },
+  // ];
 
 
 
@@ -70,61 +103,51 @@ const Home = () => {
   
   ];
 
+
+
+  const slider = useRef(null);
+
   const settings = {
-    dots: false,
+    accessibility: true,
+    dots: true,
     infinite: true,
     speed: 500,
-    autoplay: true,
-    autoplayspeed: 500,
-    slidesToShow: 4,
+    arrows: false,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1536,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 1280,
+        breakpoint: 1023,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
           infinite: true,
+          dots: true,
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           initialSlide: 2,
         },
       },
       {
-        breakpoint: 768, // Adjust the breakpoint as needed for mobile screens
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "25%", // Adjust the padding as needed
-        },
-      },
-      {
-        breakpoint: 560, // Adjust the breakpoint as needed for tablets and larger screens
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 3,
-          centerMode: true,
-          centerPadding: "10%", // Adjust the padding as needed
+          initialSlide: 2,
         },
       },
     ],
   };
-       
+
+
+
+
+
 
   return (
     <>
@@ -499,84 +522,6 @@ Employment in the government sector at DHQ or THQ healthcare settings under mate
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-     
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* 
-        <div className="counter-body">
-  <ScrollTrigger onEnter={() => setcounteron(true)} onExit={() => setcounteron(false)}>
-    <div className="count-container container mx-auto my-10 sm:my-20">
-      <div className="count-width flex flex-wrap gap-4 sm:gap-6 lg:gap-8">
-        <div className="count-col flex-1 p-4 sm:w-full lg:w-1/4">
-          <div className="count-content border-2 border-black rounded-lg p-6 h-full">
-            <div className="count-number text-4xl font-bold text-indigo-700">
-              {counteron && <CounterUp start={0} end={517} duration={2} delay={0} />}
-            </div>
-            <div className="count-title text-lg font-semibold mt-4">Happy Clients </div>
-          </div>
-        </div>
-
-        <div className="count-col flex-1 p-4 sm:w-full lg:w-1/4">
-          <div className="count-content border-2 border-black rounded-lg p-6 h-full">
-            <div className="count-number text-4xl font-bold text-indigo-700">
-              {counteron && <CounterUp start={0} end={297} duration={2} delay={0} />}
-            </div>
-            <div className="count-title text-lg font-semibold mt-4">Projects Completed </div>
-          </div>
-        </div>
-
-        <div className="count-col flex-1 p-4 sm:w-full lg:w-1/4">
-          <div className="count-content border-2 border-black rounded-lg p-6 h-full">
-            <div className="count-number text-4xl font-bold text-indigo-700">
-              {counteron && <CounterUp start={0} end={13} duration={2} delay={0} />}
-            </div>
-            <div className="count-title text-lg font-semibold mt-4">Years of Experience</div>
-          </div>
-        </div>
-
-        <div className="count-col flex-1 p-4 sm:w-full lg:w-1/4">
-          <div className="count-content border-2 border-black rounded-lg p-6 h-full">
-            <div className="count-number text-4xl font-bold text-indigo-700">
-              {counteron && <CounterUp start={0} end={7} duration={2} delay={0} />}
-            </div>
-            <div className="count-title text-lg font-semibold mt-4">Global Presence </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </ScrollTrigger>
-</div>
- */}
-
-
-
-
-
       {/* =============================home heading 2 ========================= */}
 
       <div className="col-span-12 mb-4  sm:mb-1 md:mb-24 lg:mb-32 xl:mb-48  mt-5">
@@ -591,52 +536,31 @@ Employment in the government sector at DHQ or THQ healthcare settings under mate
 
 
 
-
-
-<div className="container mx-auto  mb-[13rem] p-1">
-        <div className="flex justify-center flex-wrap ">
-          {/* Image 1 */}
-
-           
-
-        {
-         Gallery.map((id)=>(
-
-<div className="relative p-2 block lg:w-1/4 md:w-1/2 sm:w-full   transform transition-transform duration-300 hover:scale-105">
-  <div className="fusion-gallery-image border-2 h-[14rem] sm:w-75 md:w-full border-red-400">
-    <Link
-      data-rel="iLightbox[gallery_image_7]"
-      className="fusion-lightbox"
-      target="_self"
-      data-caption=""
-    >
-      <img
-        decoding="async"
-        src={id.imageSrc}
-        
-        alt=""
-        title="reception"
-        aria-label="reception"
-        className="img-responsive wp-image-882 fusion-gallery-image-size-fixed h-full w-full"
-      />
-    </Link>
-  </div>
-</div>
-          ))
-        }
-
+<div className="container mx-auto mb-[13rem] p-1">
+  <div className="flex justify-center flex-wrap">
+    {Gallery.map((id) => (
+      <div className="relative p-2 block lg:w-1/4 md:w-1/2 w-60 transform transition-transform duration-300 hover:scale-105" key={id}>
+        <div className="fusion-gallery-image border-2 h-[14rem] sm:w-full md:w-full border-red-400">
+          <Link
+            data-rel="iLightbox[gallery_image_7]"
+            className="fusion-lightbox"
+            target="_self"
+            data-caption=""
+          >
+            <img
+              decoding="async"
+              src={id.imageSrc}
+              alt=""
+              title="reception"
+              aria-label="reception"
+              className="img-responsive wp-image-882 fusion-gallery-image-size-fixed h-full w-full"
+            />
+          </Link>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
+    ))}
+  </div>
+</div>
 
 
 
@@ -646,22 +570,76 @@ Employment in the government sector at DHQ or THQ healthcare settings under mate
 
 
       {/* ===========================================slider =================================== */}
-      {/* <div className="">
-  <div className="">
-    <Slider {...settings}>
-      {Gallery.map((item) => (
-        <div key={item.id} className="m-5  p-6">
-          <img
-            src={item.imageSrc}
-            className=""
-            alt={item.altText}
-          />
+     
+      {/* <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-16">
+      <div className=" flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
+        <div>
+          <h1 className=" text-4xl font-semibold text-center lg:text-start">
+            Our Doctors
+          </h1>
+          <p className=" mt-2 text-center lg:text-start">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
+            quidem.
+          </p>
         </div>
-      ))}
-    </Slider>
-  </div>
-</div> */}
+        <div className="flex gap-5 mt-4 lg:mt-0">
+          <button
+            className=" bg-[#d5f2ec] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+            onClick={() => slider.current.slickPrev()}
+          >
+            <FaArrowLeft size={25} />
+          </button>
+          <button
+            className=" bg-[#d5f2ec] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+            onClick={() => slider.current.slickNext()}
+          >
+            <FaArrowRight size={25} />
+          </button>
+        </div>
+      </div>
+      <div className=" mt-5">
+        <Slider ref={slider} {...settings}>
+          {data.map((e, index) => (
+            <div
+              className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
+              key={index}
+            >
+              <div>
+                <img
+                  src={e.img}
+                  alt="img"
+                  className=" h-56 rounded-t-xl w-full"
+                />
+              </div>
 
+              <div className=" flex flex-col justify-center items-center">
+                <h1 className=" font-semibold text-xl pt-4">{e.name}</h1>
+                <h3 className=" pt-2">{e.specialties}</h3>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
     </>
   );
